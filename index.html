@@ -1,16 +1,17 @@
 <style>
 #fullScreenVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: fill;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 </style>
 
 <!-- The video -->
-<video autoplay playsinline muted width="100%" height="100%" loop id="fullScreenVideo">
+<video autoplay playsinline muted loop id="fullScreenVideo">
   <source src="scratches2.mp4" type="video/mp4">
 </video>
